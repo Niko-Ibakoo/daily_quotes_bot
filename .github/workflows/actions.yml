@@ -1,8 +1,8 @@
-name: run text_script.py
+name: send_txt
 
 on:
   schedule:
-   - cron: '13 19 * * *' # This runs the script every day at 7:13 PM EST
+   - cron: '* * * * *' # This runs the script every day at 7:13 PM EST
 
 jobs:
   run-script:

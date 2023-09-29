@@ -6,7 +6,7 @@ from email.utils import formataddr
 import os
 from dotenv import load_dotenv
 
-import requests
+
 
 load_dotenv()
 
