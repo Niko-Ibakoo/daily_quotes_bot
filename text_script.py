@@ -6,10 +6,7 @@ from email.utils import formataddr
 import os
 from dotenv import load_dotenv
 
-import schedule
-import time
-from datetime import datetime, timedelta
-import pytz
+import requests
 
 load_dotenv()
 
@@ -176,21 +173,23 @@ def send_txt(recipient):
 
     used_quotes.append(quote_of_the_day)
 
+
+send_txt(niko)
+# send_txt(gina)
+
 # scheduled everyday at 6pm
+# def job():
+#     # Calculate the current time in EST
+#     est = pytz.timezone('US/Eastern')
+#     current_time_est = datetime.now(est)
 
-def job():
-    # Calculate the current time in EST
-    est = pytz.timezone('US/Eastern')
-    current_time_est = datetime.now(est)
+#     # Check if it's 6 PM EST
+#     if current_time_est.hour == 8 and current_time_est.minute == 0:
+#         send_txt(gina)
 
-    # Check if it's 6 PM EST
-    if current_time_est.hour == 5 and current_time_est.minute == 30:
-        send_txt(niko)
-        send_txt(gina)
+# # Schedule the job to run every minute
+# schedule.every(1).minutes.do(job)
 
-# Schedule the job to run every minute
-schedule.every(1).minutes.do(job)
-
-while True:
-    schedule.run_pending()
-    time.sleep(1)
+# while True:
+#     schedule.run_pending()
+#     time.sleep(1)
