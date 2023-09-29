@@ -1,8 +1,8 @@
-name: Daily Python Script
+name: run text_script.py
 
 on:
   schedule:
-    - cron: '0 13 * * *' # This runs the script every day at 6 pm UTC (adjust the timezone as needed)
+    - cron: '56 23 * * *' # This runs the script every day at 6 pm UTC (adjust the timezone as needed)
 
 jobs:
   run-script:
