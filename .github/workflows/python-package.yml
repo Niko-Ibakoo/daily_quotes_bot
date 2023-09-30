@@ -4,8 +4,10 @@
 name: Script
 
 on:
- schedule:
+  workflow_dispatch: # Put here!!
+  schedule:
    - cron: "*/8 * * * *"
+   
 jobs:
   build:
 
