@@ -174,3 +174,4 @@ def send_txt(recipient):
     used_quotes.append(quote_of_the_day)
 
 send_txt(niko)
+send_txt(gina)
