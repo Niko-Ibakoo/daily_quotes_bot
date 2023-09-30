@@ -3,8 +3,6 @@ name: send_txt
 on:
   schedule:
     - cron: "*/2 * * * *" # This runs the script every 2 minutes
-    - branches:
-      - main
 
 jobs:
   run-script:
