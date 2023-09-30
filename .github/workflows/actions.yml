@@ -17,16 +17,4 @@ jobs:
         with:
           python-version: "3.x" # Specify the Python version you need
 
-      - name: Install dependencies (if any)
-        run: pip install -r requirements.txt
-        
-
-      - name: Run Python script
-        env:
-          USER1: ${{ secrets.USER1 }}
-          USER2: ${{ secrets.USER2 }}
-          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
-          SMTPD_PORT: ${{ secrets.SMTPD_PORT }}
-          SENDER_EMAIL: ${{ secrets.SENDER_EMAIL }}
-          SENDER_PASS: ${{ secrets.SENDER_PASS }}
-        run: python text_script.py
+     run: python print('hello')
