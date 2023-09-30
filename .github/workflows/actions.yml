@@ -22,9 +22,6 @@ jobs:
 
       - name: Install python-dotenv
         run: pip install dotenv
-
-      - runs:
-          using: 'node16'
         
 
       - name: Run Python script
