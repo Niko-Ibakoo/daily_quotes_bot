@@ -4,9 +4,9 @@
 name: Send daily quote
 
 on:
-  workflow_dispatch: # Put here so you can manulaly trigger the workflow!!
+  workflow_dispatch: # Put here so you can manually trigger the workflow!!
   schedule:
-   - cron: "0 8 * * *" # runs every day at 8am EST
+   - cron: "0 13 * * *" # runs every day at 8am EST
    
 jobs:
   build:
